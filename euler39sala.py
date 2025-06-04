@@ -8,3 +8,4 @@ for a in range (1, p+1):
             c2= c*c
             if (a2 +b2) == c2:
                 print(a, b, c)
+#######
