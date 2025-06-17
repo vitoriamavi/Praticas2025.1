@@ -11,13 +11,13 @@ while visivel != segredo:
     print (visivel)
     
     letra = input("Digite uma letra: ")
-    novavisual = ""
+    novavisivel = ""
     
     for pos in range(len(segredo)):
         if letra != segredo[pos]:
-            novavisual += visivel[pos]
+            novavisivel += visivel[pos]
         else:
-            novavisual += segredo[pos]
-    visivel = novavisual
+            novavisivel += segredo[pos]
+    visivel = novavisivel
 if visivel == segredo:
     print (segredo)
