@@ -1,7 +1,7 @@
 import random
-palavras = ("abacate", "lima", "abacaxi")
+palavras = ("ABACATE", "LIMA", "ABACAXI")
 
-segredo = palavras [random.randint(0,2)]
+segredo = palavras [random.randint(0,len(palavras)-1)]
 
 visivel = "-" * len(segredo)
 
@@ -20,4 +20,6 @@ while visivel != segredo:
             novavisivel += segredo[pos]
     visivel = novavisivel
 if visivel == segredo:
-    print (segredo)
+    print ("Você acertou! a palavra era:", segredo)
+else:
+    print ("Você errou! a palavra era:", segredo)
