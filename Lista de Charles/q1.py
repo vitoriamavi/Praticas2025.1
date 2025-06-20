@@ -8,4 +8,3 @@ while i < limite:
             soma += digito **5
         if soma == i:
             print (i)
-        i += 1
