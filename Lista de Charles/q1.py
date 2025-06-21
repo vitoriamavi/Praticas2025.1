@@ -10,6 +10,7 @@ tempoEmSegundos = 0
 
 while massaInicial >=  0.5:
     massa /= 2
+    tempoEmSegundos += 50
 
 horas = tempoEmSegundos//3600
 minutos = (tempoEmSegundos % 3600) //60
