@@ -6,4 +6,4 @@ n = int(input("Digite um número: "))
 
 if n > 0:
     n**(n+1)/2 == int 
-    
+    print("eh um número triangular")
