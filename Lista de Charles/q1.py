@@ -9,7 +9,7 @@ massaInicial = float(input("Digie a massa inicial do material radioativo: "))
 tempoEmSegundos = 0
 
 while massaInicial >=  0.5:
-    massaInicial /= 2
+    massa /= 2
 
 horas = tempoEmSegundos//3600
 minutos = (tempoEmSegundos % 3600) //60
