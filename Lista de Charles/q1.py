@@ -6,6 +6,7 @@ Massa Final: 0.48828125 gramas
 Tempo de Decaimento: 0:07:30'''
 
 massaInicial = float(input("Digie a massa inicial do material radioativo: "))
+massa = massaInicial
 tempoEmSegundos = 0
 
 while massa >=  0.5:
