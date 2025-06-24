@@ -3,7 +3,7 @@ q = 0
 nums = []
 
 n = int(input("Digite um número: "))
-while n >= 0:
+while n > 0:
 
     soma += n
     q += 1
@@ -13,4 +13,4 @@ while n >= 0:
 
 if q > 0:
     media = soma / q
-print(media)
+print(media, nums)
