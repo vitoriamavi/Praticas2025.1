@@ -13,4 +13,8 @@ while n > 0:
 
 if q > 0:
     media = soma / q
-print(media, nums)
+    soma = 0
+    for n in nums:
+        soma += (n - media)**2
+    variancia = soma / q
+    print(f"A média é {media} e a variância é {variancia}")
