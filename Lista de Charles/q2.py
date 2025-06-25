@@ -4,7 +4,7 @@
 9474 = 9⁴ + 4⁴ + 7⁴ + 4⁴
 Faça um programa que encontra e exibe os números menores de 1.000.000, que são múltiplos de 2 ou 5 e que podem ser escritos pela soma das potências de 5 de seus dígitos.'''
 
-for numero in range(2, 1000000):
+for numero in range(2, 1000001):
     if numero % 2 == 0 or numero % 5 == 0:
         soma = 0
         temp = numero
