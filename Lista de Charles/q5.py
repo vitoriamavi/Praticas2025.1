@@ -14,13 +14,13 @@ while verifica == 0:
     for digito in string1:
         if digito != 0 and digito != 1:
             validoString1 = 0
-            break #sai do loop quando encontra um digito inválido
+            break #sai do for quando encontra um digito inválido
 
     validoString2 = 1 #valida para a primeira string
     for digito in string2:
         if digito != 0 and digito != 1:
             validoString2 = 0
-            break #sai do loop quando encontra um digito inválido
+            break #sai do for quando encontra um digito inválido
 
     if validoString1 == 0 or validoString2 == 0:
         print("As sequências devem conter apenas 0 ou 1.")
@@ -31,8 +31,15 @@ while verifica == 0:
     else:
         verifica = 1
 
-and = ""
-or = ""
-xor = ""
+resultAND = ""
+resultOR = ""
+resultXOR = ""
+for i in range(len(string1)):
+    bit1 = int(string1[i])
+    bit2 = int(string2[i])
 
+    resultOR += str(bit1 & bit2)
 
+    resultOR += str(bit1 | bit2)
+
+    resultXOR += str(bit1 ^ bit2)
