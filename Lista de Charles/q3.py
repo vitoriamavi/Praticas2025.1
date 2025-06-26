@@ -20,5 +20,5 @@ try:
             print(f"O número {num} é triangular.")
         else:
             print(f"O número {num} não é triangular.")
-except ValueError:
+except:
     print("Entrada inválida. Por favor, digite um número inteiro.")
