@@ -1,5 +1,5 @@
-conta = int(input("Valor da conta: "))
-pago = int(input("Valor pago: "))
+conta = float(input("Valor da conta: "))
+pago = float(input("Valor pago: "))
 troco = pago - conta
 print(f"Troco: R$ {troco}") 
 notas = [200, 100, 50, 20, 10, 5, 2, 1]
