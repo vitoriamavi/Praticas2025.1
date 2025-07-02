@@ -1,6 +1,5 @@
-print("--- Calculadora de Troco ---")
-conta = int(float(input("Valor da conta (R$): ")))
-pago = int(float(input("Valor pago (R$): ")))
+conta = int(input("Valor da conta (R$): "))
+pago = int(input("Valor pago (R$): "))
 troco = pago - conta
 print(f"Troco: R$ {troco}") 
 
