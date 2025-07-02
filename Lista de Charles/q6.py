@@ -10,7 +10,7 @@ Iterações:
 8730 – 0378 = 8352
 8532 – 2358 = 6174
 Nº de Iterações: 3'''
-
+#não fiz
 n = int(input("Digite um inteiro positivo de no máximo 4 dígitos: "))
 
 if not (0 < n < 10000):
@@ -25,7 +25,7 @@ else:
     if len(set(s_n)) == 1:
         print("O processo de Kaprekar não funciona para números com todos os dígitos iguais.")
     else:
-        # --- Processo de Kaprekar ---
+        
         count = 0
         current_number = n
 
@@ -39,7 +39,6 @@ else:
             # Converte a string de dígitos para uma lista de inteiros para facilitar a ordenação
             digitos_list = [int(d) for d in s_current_number]
 
-            # --- Lógica para ordenar dígitos DECRescente (Bubble Sort manual) ---
             # Cria uma cópia para ordenar em ordem decrescente
             digitos_desc_list = list(digitos_list) 
             tamanho = len(digitos_desc_list)
@@ -53,8 +52,6 @@ else:
             
             # Converte a lista de volta para string
             digits_desc = "".join([str(d) for d in digitos_desc_list])
-
-            # --- Lógica para ordenar dígitos CRESCENTE (Bubble Sort manual) ---
             # Cria uma cópia para ordenar em ordem crescente
             digitos_asc_list = list(digitos_list) 
             tamanho = len(digitos_asc_list)
@@ -69,13 +66,11 @@ else:
             # Converte a lista de volta para string
             digits_asc = "".join([str(d) for d in digitos_asc_list])
 
-            # --- Cálculo de Kaprekar ---
             num_desc = int(digits_desc)
             num_asc = int(digits_asc)
 
             result = num_desc - num_asc
             
-            # Exibe a iteração diretamente
             iteration_str = f"{num_desc} – {num_asc} = {result}"
             print(iteration_str)
 
