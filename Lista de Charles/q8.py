@@ -14,3 +14,4 @@ Ao final, indique:
 - Quais foram os movimentos válidos que ele executou;
 - Em que quadrante ele iniciou (posição inicial);
 - Em que quadrante ele terminou (posição final).'''
+
