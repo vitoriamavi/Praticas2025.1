@@ -11,4 +11,4 @@ for n in range(len(lstNomes)):
     lstNotas.append([random.randint(0, 100),
                     random.randint(0, 100),
                     random.randint(0, 100)])
-print(lstNotas)
+print(lstNotas),,,
