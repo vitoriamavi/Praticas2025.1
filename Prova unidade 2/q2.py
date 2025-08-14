@@ -7,7 +7,7 @@ def valida_luhn(num_cartao: str) -> bool:
         if i % 2 == 0:
             n *= 2
             if n > 9:
-                n -= 9
+                n -= 9 #todo número de 2 dígitos ao ser subtraído por nome é equivalente a somar cada dígito.
         soma += n
     return soma % 10 == 0
 num_cartao = int(input("Digite o número do cartão: "))
